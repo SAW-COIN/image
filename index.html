@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #101010;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .update-notification {
+            text-align: center;
+            padding: 20px;
+            background-color: #161616;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            margin: 5px auto;
+            width: 80%;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .update-notification h2 {
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 1.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .update-notification p {
+            margin: 5px 0;
+            color: #bbb;
+            font-size: 1rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="update-notification">
+        <h2>We're Currently Updating</h2>
+        <p>Thank you for your patience! We're working hard to finish these updates and will be back soon.</p>
+    </div>
+
+</body>
+</html>
