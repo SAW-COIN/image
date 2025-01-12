@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Feedback & Suggestions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+    <script>
+        eruda.init();
+    </script>
+</head>
+<body>
+    <div id="mainPage" class="screen-content active">
+        <div class="container">
+            <h2>Feedback & Suggestions</h2>
+            <div class="option-group">
+                <label class="option">
+                    <input type="radio" name="messageType" value="Complaint"> Complaint
+                </label>
+                <label class="option">
+                    <input type="radio" name="messageType" value="Suggestion"> Suggestion
+                </label>
+            </div>
+            <div class="mess">Enter your problem here 👇</div>
+            <textarea id="message" placeholder="Enter your feedback or suggestion here..."></textarea>
+            <input id="username" type="text" placeholder="Telegram Username" disabled>
+            <input id="userId" type="text" placeholder="Telegram ID" disabled>
+            <button id="submitButton">Submit</button>
+        </div>
+
+        <div class="note">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span> Please include as much information as possible to help resolve your issue efficiently. The support team will contact you to review the problem within 24 hours </span>
+        </div>
+    </div>
+
+    <div id="faqPage" class="screen-content scrollable">
+    <div class="faq-container">
+        <h2>Instructions & FAQ 🤔</h2>
+        <ul>
+            <li>
+                <div class="question">
+                    <span>When will the currency be listed?</span>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer">Follow <a href="https://t.me/SAW_COIN" target="_blank" class="styled-link">https://t.me/SAW_COIN</a> for the latest updates! We will share all details there as soon as they are finalized.</p>
+            </li>
+            <li>
+                <div class="question">
+                    <span>What is the airdrop for the currency?</span>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer">The airdrop is a free distribution of digital currency as part of a marketing strategy. The currency will be listed soon on the market.</p>
+            </li>
+            <li>
+                <div class="question">
+                    <span>Can I withdraw my current coins?</span>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer">You can withdraw your coins once the airdrop is complete and the currency is listed on trading platforms.</p>
+            </li>
+            <li>
+                <div class="question">
+                    <span>Does my Rank increase my chances of being eligible for the airdrop?</span>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer">No, this is not a requirement.</p>
+            </li>
+            <li>
+                <div class="question">
+                    <span>Does inviting friends increase my chances of receiving the airdrop?</span>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer">No, this is not a requirement.</p>
+            </li>
+            <li>
+                <div class="question">
+                    <span>My balance has become 0. What should I do?</span>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer">This could be due to network issues or high traffic on the app. Please close and reopen the app or contact support with all details to resolve your issue.</p>
+            </li>
+            <li>
+                <div class="question">
+                    <span>How can I improve my chances of solving the problem?</span>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer">Include as many details as possible.</p>
+            </li>
+            <li>
+                <div class="question">
+                    <span>What is the maximum number of messages per day?</span>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer">You can send one message per day to ensure issues are managed effectively.</p>
+            </li>
+            <li>
+                <div class="question">
+                    <span>What should I do if my issue is not resolved?</span>
+                    <button class="toggle-btn">+</button>
+                </div>
+                <p class="answer">wait for a response within 24 hours. Support will respond. upon you </p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+    <nav class="menu">
+        <div class="menu-list">
+
+            <div class="menu-item-container">
+                <button data-target="mainPage" class="menu-item">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div class="menu-item-container">
+                <button data-target="faqPage" class="menu-item">
+                    <div class="icon-wrapper">
+                        <i class="fa-regular fa-circle-question"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
